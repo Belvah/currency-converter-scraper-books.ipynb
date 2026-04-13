@@ -24,8 +24,8 @@ This project demonstrates:
 
 1. Create and activate the virtual environment:
    ```bash
-   python3 -m venv myenv
-   source myenv/bin/activate
+   python3 -m venv myenvt2
+   source myenvt2/bin/activate
    ```
 
 2. Install dependencies:
@@ -33,15 +33,26 @@ This project demonstrates:
    pip install -r requirements.txt
    ```
 
-3. Run any notebook in VS Code with the `myenv` kernel selected.
+3. Run any notebook in VS Code with the `myenvt2` kernel selected.
+
+## Tools & Technologies
+
+- Python 3.13
+- Jupyter Notebook
+- VS Code
+- Git & GitHub
+- Frankfurter API (live exchange rates, no API key required)
 
 ## Libraries Used
 
-- `requests` — HTTP requests
-- `beautifulsoup4` — HTML parsing
-- `pandas` — Data manipulation and tables
-- `matplotlib` — Data visualization
-- `numpy` — Numerical operations
+- `requests` — HTTP requests for scraping and API calls
+- `beautifulsoup4` — HTML parsing and data extraction
+- `pandas` — Data manipulation and tabular display
+- `matplotlib` — Data visualization (bar charts)
+- `numpy` — Numerical operations for chart layout
+- `re` — Regex for price data cleaning
+- `json` — JSON data export
+- `datetime` — Timestamping conversions
 - `openpyxl` — Excel file support
 - `lxml` — XML parsing
 
@@ -70,8 +81,8 @@ Uses the free [Frankfurter API](https://api.frankfurter.app/) for live exchange 
 
 2. Create a virtual environment:
    ```bash
-   python3 -m venv myenv
-   source myenv/bin/activate
+   python3 -m venv myenvt2
+   source myenvt2/bin/activate
    ```
 
 3. Install dependencies:
@@ -82,7 +93,7 @@ Uses the free [Frankfurter API](https://api.frankfurter.app/) for live exchange 
 ## Testing
 
 1. Open `currency_converter_scraper_books.ipynb` in VS Code.
-2. Select the `myenv` kernel (top-right of notebook).
+2. Select the `myenvt2` kernel (top-right of notebook).
 3. Run the cell and press **Enter** twice to use the default currencies (GBP → KES).
 4. Verify that:
    - 10 books are scraped successfully
